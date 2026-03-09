@@ -7,8 +7,8 @@ struct DayFlowApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(taskStore)
                 .toastOverlay()
+                .environment(taskStore)
                 .preferredColorScheme(.dark)
         }
     }
