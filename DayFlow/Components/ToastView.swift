@@ -32,7 +32,7 @@ struct ToastView: View {
 // MARK: - Toast Overlay Modifier
 
 struct ToastModifier: ViewModifier {
-    @Environment(TaskStore.self) private var store
+    @Environment(\.taskStore) private var store
 
     func body(content: Content) -> some View {
         content

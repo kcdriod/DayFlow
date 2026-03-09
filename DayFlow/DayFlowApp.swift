@@ -8,7 +8,7 @@ struct DayFlowApp: App {
         WindowGroup {
             ContentView()
                 .toastOverlay()
-                .environment(taskStore)
+                .environment(\.taskStore, taskStore)
                 .preferredColorScheme(.dark)
         }
     }

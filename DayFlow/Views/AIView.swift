@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct AIView: View {
-    @Environment(TaskStore.self) private var store
+    @Environment(\.taskStore) private var store
     @State private var isPrioritizing = false
     @State private var showResult = false
 

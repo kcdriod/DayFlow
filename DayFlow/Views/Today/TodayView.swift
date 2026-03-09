@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct TodayView: View {
-    @Environment(TaskStore.self) private var store
+    @Environment(\.taskStore) private var store
 
     var greeting: String {
         let h = Calendar.current.component(.hour, from: Date())

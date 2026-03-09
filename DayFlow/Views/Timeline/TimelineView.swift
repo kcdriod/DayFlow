@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct TimelineView: View {
-    @Environment(TaskStore.self) private var store
+    @Environment(\.taskStore) private var store
 
     @State private var selectedDate: Date = Calendar.current.startOfDay(for: Date())
     @State private var showCalendar  = false

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    @Environment(TaskStore.self) private var store
+    @Environment(\.taskStore) private var store
     @Binding var hasOnboarded: Bool
 
     @State private var step = 0

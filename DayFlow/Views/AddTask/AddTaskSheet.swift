@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct AddTaskSheet: View {
-    @Environment(TaskStore.self) private var store
+    @Environment(\.taskStore) private var store
     @Environment(\.dismiss) private var dismiss
 
     @State private var title = ""

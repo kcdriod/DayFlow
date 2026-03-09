@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @Environment(TaskStore.self) private var store
+    @Environment(\.taskStore) private var store
 
     @State private var showWakeTimePicker = false
     @State private var showBedTimePicker  = false
